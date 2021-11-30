@@ -1,15 +1,17 @@
 .header {
   display: block;
-  padding:25px 35px;
+  min-height: 74px;
+  padding: 25px 35px;
+  box-sizing: border-box;
   background-color: $color-default-white;
 }
 
 .header__logo {
-  width:192px;
-  height:24px;
+  width: 192px;
+  height: 24px;
 
-    svg {
-      width:192px;
-      height:24px;
-    }
+  svg {
+    width: 192px;
+    height: 24px;
+  }
 }

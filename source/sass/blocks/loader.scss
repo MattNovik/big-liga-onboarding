@@ -1,33 +1,75 @@
 .loader {
   position: absolute;
   top: 0;
-  left: 0;
   right: 0;
   display: flex;
-  display: none;
   flex-direction: column;
   justify-content: flex-end;
   width: 100%;
   height: calc(100 * var(--vh, 1vh));
-  min-height:400px;
+  min-height: 400px;
   background-color: $color-default-white;
   padding: 0 0 100px 0;
+  opacity: 1;
+  transition: 0.8s ease;
+  z-index: 10;
+
+  &.loader--active {
+    .active {
+      opacity: 1;
+    }
+  }
+
+  &.loader--out {
+    right: calc((100vw + 100px) * -1);
+  }
 
   svg {
     position: absolute;
     top: calc(calc(50 * var(--vh, 1vh)) - 50px);
-    left:calc(50% - 400px);
+    left: calc(50% - 400px);
     width: 800px;
     height: 100px;
     margin: 0 auto;
+    transition: opacity 3s ease;
+    opacity: 0;
+  }
+
+  @include viewport--md {
+    svg {
+      top: calc(calc(50 * var(--vh, 1vh)) - 35px);
+      left: calc(50% - 275px);
+      width: 550px;
+      height: 70px;
+    }
   }
 }
 
 .loader__enter {
   max-width: max-content;
-  margin:0 auto;
+  margin: 0 auto;
   border: none;
   outline: none;
-  padding:100px 0 0 0;
+  padding: 100px 0 0 0;
   background-color: $color-transparent;
+  transition: 0.5s;
+  opacity: 1;
+
+  &.loader__enter--inactive {
+    opacity: 0;
+  }
+
+  &.loader__enter--tablet {
+    display: none;
+  }
+
+  @include viewport--md {
+    &.loader__enter--tablet {
+      display: flex;
+    }
+
+    &.loader__enter--desctop {
+      display: none;
+    }
+  }
 }

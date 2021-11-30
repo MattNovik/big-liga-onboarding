@@ -19,13 +19,20 @@
       <div class="container">
         <div class="loader">
           @@include("source/html/svg/logo.html")
-          <button class="loader__enter">Нажмите на Enter</button>
+          <button class="loader__enter loader__enter--desctop loader__enter--inactive">Нажмите на Enter</button>
+          <button class="loader__enter loader__enter--tablet loader__enter--inactive">Кликните на экран</button>
         </div>
         <div class="wrapper-content">
-          <h1>Вёрстка
-            и фронтенд
-            любой сложности </h1>
-          @@include("source/html/svg/dino.html")
+          <h1>Вёрстка<br>
+            и фронтенд<br>
+            любой<br>
+            сложности </h1>
+            <div class="wrapper-content__dino">
+              @@include("source/html/svg/dinoColor.html")
+              @@include("source/html/svg/dinoWhite.html")
+              <p>для digital‑агентств, продуктовых компаний
+                и фриланс‑команд</p>
+            </div>
         </div>
       </div>
     </main>

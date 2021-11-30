@@ -1,0 +1,15 @@
+.dino {
+  &.dino--white {
+    display: none;
+  }
+
+  @include viewport--md {
+    &.dino--color {
+      display: none;
+    }
+
+    &.dino--white {
+      display: flex;
+    }
+  }
+}
