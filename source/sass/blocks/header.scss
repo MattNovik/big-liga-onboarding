@@ -1,3 +1,15 @@
 .header {
   display: block;
+  padding:25px 35px;
+  background-color: $color-default-white;
+}
+
+.header__logo {
+  width:192px;
+  height:24px;
+
+    svg {
+      width:192px;
+      height:24px;
+    }
 }

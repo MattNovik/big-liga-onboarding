@@ -1,0 +1,33 @@
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  display: none;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  height: calc(100 * var(--vh, 1vh));
+  min-height:400px;
+  background-color: $color-default-white;
+  padding: 0 0 100px 0;
+
+  svg {
+    position: absolute;
+    top: calc(calc(50 * var(--vh, 1vh)) - 50px);
+    left:calc(50% - 400px);
+    width: 800px;
+    height: 100px;
+    margin: 0 auto;
+  }
+}
+
+.loader__enter {
+  max-width: max-content;
+  margin:0 auto;
+  border: none;
+  outline: none;
+  padding:100px 0 0 0;
+  background-color: $color-transparent;
+}
