@@ -4,13 +4,13 @@
   height: calc(100% - 43px);
   background-position: center;
   background-repeat: no-repeat;
-  margin: 43px 0 0;
+  margin: 37px 0 0;
   background-image: url("../img/svg/letterA.svg");
   background-size: contain;
 
   h1 {
     flex-grow: 1;
-    margin: 55px 0 0 0;
+    margin: 62px 0 0 0;
     color: $color-neon-blue;
     font-size: 96px;
     line-height: 96px;
@@ -23,7 +23,7 @@
 
     h1 {
       position: absolute;
-      top: calc(50 * var(--vh, 1vh) - 142px);
+      top: calc(50 * var(--vh, 1vh) - 132px);
       left: 100vw;
       min-width: 600px;
       margin: -74px 0 0 0;
@@ -41,8 +41,11 @@
 .wrapper-content__dino {
   width: 352px;
   height: 100%;
+  box-sizing: border-box;
+  padding: 2px 0 0 0;
 
   p {
+    margin: 27px 0 0 0;
     width: 352px;
     font-style: normal;
     font-weight: normal;
@@ -63,6 +66,7 @@
     padding: 161px 0 0 0;
 
     p {
+      margin: 30px 0 0 0;
       color: $color-default-white;
     }
 
