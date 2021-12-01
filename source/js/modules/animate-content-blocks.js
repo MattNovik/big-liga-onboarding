@@ -1,5 +1,10 @@
 const loader = document.querySelector('.loader');
 const textContent = document.querySelector('h1');
+const wrapperContent = document.querySelector('.wrapper-content');
+
+export const addContentAnimation = () => {
+  wrapperContent.classList.add('wrapper-content--active');
+};
 
 export const addSvgAnimation = () => {
   loader.querySelector('svg').classList.add('active');

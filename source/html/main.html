@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+  @@include("source/html/base/head.html")
+  <title>Большая Лига</title>
+
+</head>
+<body>
+
+  <div class="wrapper">
+    @@include("source/html/base/header.html")
+
+    <main>
+      <div class="container">
+        <div class="loader">
+          @@include("source/img/svg/logo.svg")
+          <button class="loader__enter loader__enter--desctop loader__enter--inactive">Нажмите на Enter</button>
+          <button class="loader__enter loader__enter--tablet loader__enter--inactive">Кликните на экран</button>
+        </div>
+        <div class="wrapper-content">
+          <h1>Вёрстка<br>
+            и фронтенд<br>
+            любой<br>
+            сложности </h1>
+            @@include("source/html/base/dino.html")
+        </div>
+      </div>
+    </main>
+
+    @@include("source/html/base/footer.html")
+  </div>
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>

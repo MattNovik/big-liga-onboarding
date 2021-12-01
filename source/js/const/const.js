@@ -1,1 +1,1 @@
-export const viewportMd = '(max-width:768px)';
+export const viewportLg = '(max-width:1023px)';
